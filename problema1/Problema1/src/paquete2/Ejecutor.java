@@ -15,7 +15,6 @@ public class Ejecutor {
         Terreno tro = new Terreno();
         
         //Valores de Entrada
-        double costo_terreno = 800;
         double ancho = 40;
         double largo = 80;
         double valorMetroCuadrado = 15.60;
@@ -33,26 +32,27 @@ public class Ejecutor {
                     tro.obtenerArea(), tro.obtenerValorMetroCuadrado(),     
                     tro.obtenerCalcularCosto_Terreno());
         
+        System.out.println("---------------------------------------------");
+        
         Terreno tro2 = new Terreno();
         
         //Valores de Entrada
-        double costo_terreno2 = 400;
         double ancho2 = 60;
         double largo2 = 20;
         double valorMetroCuadrado2 = 16;
         
-        tro.establecerAncho(ancho2);
-        tro.establecerLargo(largo2);
-        tro.establecerValorMetroCuadrado(valorMetroCuadrado2);
-        tro.establecerArea();
-        tro.calcularCosto_terreno();
+        tro2.establecerAncho(ancho2);
+        tro2.establecerLargo(largo2);
+        tro2.establecerValorMetroCuadrado(valorMetroCuadrado2);
+        tro2.establecerArea();
+        tro2.calcularCosto_terreno();
         
         //Se presentan los datos
-        System.out.printf("\n\n\tCosto de un Terreno \n\nAncho: %.2f \nLargo: %.2f "
+        System.out.printf("\n\tCosto de un Terreno \n\nAncho: %.2f \nLargo: %.2f "
                 + " \nArea: %.2f \nValor Metro Cuadrado: %.2f \n\tEl Costo del  "
-                + "Terreno es: %.2f\n", tro.obtenerAncho(), tro.obtenerLargo(), 
-                    tro.obtenerArea(), tro.obtenerValorMetroCuadrado(),     
-                    tro.obtenerCalcularCosto_Terreno());
+                + "Terreno es: %.2f\n", tro2.obtenerAncho(), tro2.obtenerLargo(), 
+                    tro2.obtenerArea(), tro2.obtenerValorMetroCuadrado(),     
+                    tro2.obtenerCalcularCosto_Terreno());
         
     }
 }
